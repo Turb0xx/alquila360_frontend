@@ -1,5 +1,5 @@
 {
-<<<<<<< HEAD
+
   "name": "alquila360_frontend",
   "version": "0.1.0",
   "private": true,
@@ -21,7 +21,7 @@
     "@tailwindcss/postcss": "^4",
     "tailwindcss": "^4"
   }
-=======
+
   "name": "alquila360",
   "version": "1.0.0",
   "description": "",
@@ -40,5 +40,4 @@
     "url": "https://github.com/JairoMontanoUCB/Alquila360/issues"
   },
   "homepage": "https://github.com/JairoMontanoUCB/Alquila360#readme"
->>>>>>> upstream/main
 }
