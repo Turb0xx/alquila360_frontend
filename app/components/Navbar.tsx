@@ -1,20 +1,18 @@
+"use client";
+
+import Link from "next/link";
+
 export default function Navbar() {
   return (
-    <header className="flex justify-between items-center px-8 py-4 shadow-sm bg-white">
-      <h1 className="text-2xl font-bold">Alquila360</h1>
+    <nav className="flex items-center justify-between px-8 py-4 shadow-md bg-white">
+      <Link href="/" className="text-2xl font-bold">Alquila360</Link>
 
-      <nav className="flex gap-6 text-gray-600">
-        <a href="#">Find Properties</a>
-        <a href="#">Support</a>
-      </nav>
-
-      <a
-        href="/login"
-        className="px-4 py-2 border rounded-md hover:bg-gray-100 transition"
-      >
-        Log in
-      </a>
-    </header>
+      <div className="flex gap-6 text-gray-700">
+        <Link href="/properties" className="hover:text-black transition">Propiedades</Link>
+        <Link href="/support" className="hover:text-black transition">Soporte</Link>
+        <Link href="/login" className="hover:text-black transition">Log in</Link>
+      </div>
+    </nav>
   );
 }
 
