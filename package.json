@@ -1,5 +1,4 @@
 {
-
   "name": "alquila360_frontend",
   "version": "0.1.0",
   "private": true,
@@ -20,19 +19,9 @@
     "@types/react-dom": "^19",
     "@tailwindcss/postcss": "^4",
     "tailwindcss": "^4"
-  }
-
-  "name": "alquila360",
-  "version": "1.0.0",
+  },
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JairoMontanoUCB/Alquila360.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -41,3 +30,4 @@
   },
   "homepage": "https://github.com/JairoMontanoUCB/Alquila360#readme"
 }
+
