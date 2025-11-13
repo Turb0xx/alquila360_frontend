@@ -1,0 +1,67 @@
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+
+export default function SignUpPage() {
+  return (
+    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      <div className="bg-white shadow-lg rounded-2xl p-8 w-full max-w-md">
+        <h1 className="text-2xl font-bold text-center mb-6">Crear Cuenta</h1>
+
+        <form className="flex flex-col gap-4">
+          <div>
+            <label className="block text-sm font-medium text-gray-700">Nombre</label>
+            <input
+              type="text"
+              placeholder="Ingresa tu nombre"
+              className="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-pink-500"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700">Email</label>
+            <input
+              type="email"
+              placeholder="Ingresa tu email"
+              className="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-pink-500"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700">Password</label>
+            <input
+              type="password"
+              placeholder="Crea una contraseña"
+              className="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-pink-500"
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="w-full bg-pink-500 text-white py-2 rounded-lg hover:bg-pink-600 transition"
+          >
+            Registrarse
+          </button>
+        </form>
+
+        <p className="text-center text-sm text-gray-600 mt-4">
+          ¿Ya tienes una cuenta?{" "}
+          <Link href="/login" className="text-pink-500 hover:underline">
+            Inicia sesión
+          </Link>
+        </p>
+
+        <div className="mt-6">
+          <Image
+            src="/login.jpg" // usa la misma imagen que el login o cambia el nombre si tienes otra
+            alt="Sign Up Image"
+            width={500}
+            height={300}
+            className="rounded-lg"
+          />
+        </div>
+      </div>
+    </div>
+  );
+}

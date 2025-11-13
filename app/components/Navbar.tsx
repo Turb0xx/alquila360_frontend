@@ -9,7 +9,7 @@ export default function Navbar() {
 
       <div className="flex gap-6 text-gray-700">
         <Link href="/properties" className="hover:text-black transition">Propiedades</Link>
-        <Link href="/support" className="hover:text-black transition">Soporte</Link>
+        <Link href="/signup" className="hover:text-black transition">Sign up</Link>
         <Link href="/login" className="hover:text-black transition">Log in</Link>
       </div>
     </nav>
